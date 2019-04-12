@@ -32,7 +32,11 @@ game.addEventListener("mousedown", function(e) {
   }
 });
 
-function getWinningNumber(min, max) {}
+function getWinningNumber(min, max) {
+  let winningNumber = Math.floor(Math.random() * (max - min + 1) + min);
+  console.log(winningNumber);
+  return winningNumber;
+}
 
 function playGame() {
   let guess = parseInt(guessInput.value);
